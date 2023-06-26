@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Personal R. Soares</h1>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p> Olá, sou Ricardo Sales Soares, professor de educação física na
+      área de bacharel, atuo há mais de 5 anos com treinamento de
+      musculação e outros, ajudo pessoas quaisquer a conquistarem seus
+      objetivos através do treinamento, isso inclui, saúde e bem estar,
+      estética e atletas para competições, sou especialista no trabalho
+      de emagrecimento e hipertrofia, como também auto performance.</p>
+  </section>
+
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="/public/img/aluno01.png" alt="Image 1">
+      <img src="/public/img/aluno02.png" alt="Image 2">
+      <img src="/public/img/aluno04.png" alt="Image 3">
+    </div>
+    <a class="carousel-prev" href="#">Anterior</a>
+    <a class="carousel-next" href="#">Próximo</a>
+  </div>
+  
+
+  
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo através do email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+
 </html>
